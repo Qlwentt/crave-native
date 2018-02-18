@@ -9,58 +9,22 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  TextInput
 } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Splash from './src/components/Splash';
+import Login from './src/components/Login/Login';
 
-// export default class CraveNative extends Component {
-//   render() {
-//     return (
-//       <View style={styles.container}>
-//         <Text style={styles.welcome}>
-//           Welcome to React Native!
-//         </Text>
-//         <Text style={styles.instructions}>
-//           To get started, edit index.ios.js
-//         </Text>
-//         <Text style={styles.instructions}>
-//           Press Cmd+R to reload,{'\n'}
-//           Cmd+D or shake for dev menu
-//         </Text>
-//       </View>
-//     );
-//   }
-// }
 
-export default class HelloWorldApp extends Component {
+export default class CraveNative extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Hi Quai! This is your Crave App!!</Text>
-      </View>
+        <Login/>
     );
   }
 }
 
+
 // skip this line if using Create React Native App
-AppRegistry.registerComponent('CraveNative', () => HelloWorldApp);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-// AppRegistry.registerComponent('CraveNative', () => CraveNative);
+AppRegistry.registerComponent('CraveNative', () => CraveNative);
