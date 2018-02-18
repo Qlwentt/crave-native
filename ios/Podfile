@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CraveNative' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for CraveNative
+  pod 'RNVectorIcons', :path => 'node_modules/react-native-vector-icons'
+
+  target 'CraveNative-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CraveNativeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'CraveNative-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for CraveNative-tvOS
+
+  target 'CraveNative-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
